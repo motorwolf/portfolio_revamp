@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Kristen Payne</title>
+    <title>Kristen Payne: Software Engineer</title>
   </head>
   <body>
     <header>
       <h1>Kristen Payne</h1>
+      <p>Software Engineer</p>
     </header>
-    <main>
-      The main content
-    </main>
+    {% include 'nav.html' %}
+    {% block main %}
+    {% endblock %}
     <footer>
-      The footer
+      This is where the footer content is.
     </footer>
   </body>
 </html>

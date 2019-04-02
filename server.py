@@ -1,23 +1,27 @@
 import os
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY")
 
 @app.route("/")
 def render_homepage():
-    return "Hello, world!"
+    return render_template('index.html')
 
 @app.route("/projects")
 def render_projects():
-    return "Projects!"
+    return render_template('projects.html')
 
 @app.route("/art")
 def render_art():
-    return "Art!"
+    return render_template('art.html')
 
 @app.route("/me")
 def render_about_me():
-    return "Me!"
+    return render_template('me.html')
+
+@app.route("/writing")
+def render_writing():
+    return render_template('writing.html')
 
 if __name__ == '__main__':
     app.debug=True
