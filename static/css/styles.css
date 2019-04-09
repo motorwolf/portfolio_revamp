@@ -1,0 +1,31 @@
+:root {
+  --main-color: #FFFFF8;
+  --header-font: sans-serif;
+  --body-font: serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  background-color: red;
+  flex-direction: column;
+}
+nav {
+  background-color: lime;
+}
+main {
+  background-color: orange;
+}
+
+footer {
+  background-color: gold;
+}

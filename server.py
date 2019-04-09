@@ -19,6 +19,14 @@ def render_art():
 def render_about_me():
     return render_template('me.html')
 
+@app.route("/resume")
+def render_resume():
+    return render_template('resume.html')
+
+@app.route("/work")
+def render_work_detail():
+    return render_template('work.html')
+
 @app.route("/writing")
 def render_writing():
     return render_template('writing.html')
